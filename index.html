@@ -1,14 +1,32 @@
 <!doctype html>
+<head>
+  <script src="javascripts/jquery-1.10.2.js"></script>
+  <script src="javascripts/jquery-ui-1.10.4.custom.min.js"></script>
+  <script>
+    $(function() {
+      $(".draggable").draggable();
+    });
+  </script>
+</head>
 <html>
   <!-- just think of how many electrons were disturbed just so you could read this message.... -->
   <body>
-    <style> img {
-      position: absolute; top: 0; bottom: 0; left: 0; right: 0;
-      margin: auto;
-      width: 150px;
-      height: 150px;
-      }</style>
-    <img src="/lol.svg"/>
+    <style>
+      .draggable {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -75px;
+        margin-left: -75px;
+      }
+      .draggable img {
+        width: 150px;
+        height: 150px;
+      }
+    </style>
+    <div class="draggable">
+      <img src="lol.svg"/>
+    </div>
     <!-- made by listrophy, y'all -->
     <!-- artz by missingdink -->
   </body>
